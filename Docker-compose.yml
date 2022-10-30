@@ -1,0 +1,64 @@
+version: '3.1'
+
+
+services:
+
+  eureka-server:
+    image: hassanelghalbzouri/ms-eureka-service
+    environment:
+      - server.port=8761
+      - eureka.client.fetch-registry=false
+      - eureka.client.register-with-eureka=false
+    ports:
+      - 8761:8761
+
+
+
+  gateway: 
+    image: hassanelghalbzouri/ms-gateway
+    environment:
+      - eureka.instance.prefer-ip-address=true
+      - server.port=9999
+      - spring.application.name=GATEWAY
+      - spring.cloud.discovery.enabled=true
+      - eureka.client.service-url.defaultZone=http://eureka-server:8761/eureka
+    ports:
+      - 9999:9999
+    depends_on:
+      - eureka-server
+  
+  customer-service:
+    image: hassanelghalbzouri/ms-customer-service
+    environment:
+      - eureka.instance.prefer-ip-address=true
+      - server.port=8084
+      - spring.application.name=CUSTOMER-SERVICE
+      - spring.h2.console.enabled=true
+      - spring.cloud.discovery.enabled=true
+      - spring.datasource.url=jdbc:h2:mem:customer-db
+      - eureka.client.service-url.defaultZone=http://eureka-server:8761/eureka
+    ports:
+      - 8084:8084
+    depends_on:
+      - eureka-server
+      - gateway
+    
+  
+  billing-service:
+    image: hassanelghalbzouri/ms-billing-service
+    restart: always
+    environment:
+      - eureka.instance.prefer-ip-address=true
+      - server.port=8082
+      - spring.application.name=BILLING-SERVICE
+      - spring.h2.console.enabled=true
+      - spring.cloud.discovery.enabled=true
+      - spring.datasource.url=jdbc:h2:mem:billing-db
+      - eureka.client.service-url.defaultZone=http://eureka-server:8761/eureka
+    ports:
+      - 8082:8082
+    depends_on:
+      - customer-service
+      - gateway
+      - eureka-server
+

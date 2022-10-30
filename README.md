@@ -74,3 +74,22 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
     <img src="images/img_8.png" alt="">
 
 
+
+###  déploiement et orchestration à l'aide de docker compose :
+    
+- Docker-compose.yml [>>](./Docker-compose.yml):
+
+    <img src="images/img_10.png" alt="">
+...
+- commande :
+
+    <img src="images/img_13.png" alt="">
+
+
+- result :
+    
+    <img src="images/img_12.png" alt="">
+
+    <img src="images/img_11.png" alt="">
+    
+    <img src="images/Capture12.png" alt="">
