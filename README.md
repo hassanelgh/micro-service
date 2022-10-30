@@ -33,7 +33,7 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
 5. run billing-service : (`info : billing service utiliser customer-service pour initialiser database`)
 
 
-- result :
+#### result :
  - `localhost:8761` :
     
     <img src="images/img_1.png" alt="">
@@ -42,7 +42,7 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
     
     <img src="images/img_2.png" alt="">
 
-- `http://localhost:9999/BILLING-SERVICE/api/invoices`:
+ - `http://localhost:9999/BILLING-SERVICE/api/invoices`:
     
     <img src="images/img_3.png" alt="">
 
