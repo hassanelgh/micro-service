@@ -16,7 +16,42 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
 <img src="images/img.png" alt="">
 
 
+### Code :
+
 - [x] [Eureka Server](./eureka-service)
 - [x] [Gateway](./gateway)
 - [x] [Customer-Service](./customer-service)
 - [x] [billing-Service](./billing-service)
+
+
+
+### Test :
+
+1. run eureka server :
+2. run gateway :
+4. run customer-service :
+5. run billing-service : (`info : billing service utiliser customer-service pour initialiser database`)
+
+
+- result :
+ - `localhost:8761` :
+    
+    <img src="images/img_1.png" alt="">
+
+ - `http://localhost:9999/CUSTOMER-SERVICE/api/customers` :
+    
+    <img src="images/img_2.png" alt="">
+
+- `http://localhost:9999/BILLING-SERVICE/api/invoices`:
+    
+    <img src="images/img_3.png" alt="">
+
+
+
+
+
+
+
+
+
+
