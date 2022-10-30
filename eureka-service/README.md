@@ -12,7 +12,7 @@
 			<scope>test</scope>
 		</dependency>
 
--   [pom.xml](https://github.com/hassanelgh/micro-service-spring-boot/blob/main/eureka-service/pom.xml)
+-   [pom.xml](./pom.xml)
 
 ### EurekaServiceApplication :
 
@@ -20,11 +20,11 @@
 
 <img src="images/img.png" alt="">
 
-- [EurekaServiceApplication](https://github.com/hassanelgh/micro-service-spring-boot/blob/main/eureka-service/src/main/java/com/example/eurekaservice/EurekaServiceApplication.java)
+- [EurekaServiceApplication](./src/main/java/com/example/eurekaservice/EurekaServiceApplication.java)
 
 ### application.properties :
 
 <img src="images/img_1.png" alt="">
 
-- [application.properties](https://github.com/hassanelgh/micro-service-spring-boot/blob/main/eureka-service/src/main/resources/application.properties)
+- [application.properties](./src/main/resources/application.properties)
 
