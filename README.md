@@ -51,7 +51,26 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
 
 
 
+### Création des images : 
+- JAR
+- Dockerfiles:
+    > eureka-service : [>>](./eureka-service/Dockerfile)
 
+    > Gateway : [>>](./gateway/Dockerfile)
 
+    > customer-service : [>>](./customer-service/Dockerfile)
+
+    > eureka-service : [>>](./eureka-service/Dockerfile)
+
+- build images :    
+
+    <img src="images/img_4.png" alt="">
+    <img src="images/img_5.png" alt="">
+    <img src="images/img_6.png" alt="">
+    <img src="images/img_7.png" alt="">
+
+- result : 
+
+    <img src="images/img_8.png" alt="">
 
 
