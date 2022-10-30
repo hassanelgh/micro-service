@@ -60,7 +60,7 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
 
     > customer-service : [>>](./customer-service/Dockerfile)
 
-    > billing-service : [>>](./eureka-service/Dockerfile)
+    > billing-service : [>>](./billing-service/Dockerfile)
 
 - build images :    
 
