@@ -30,7 +30,7 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
 1. run eureka server :
 2. run gateway :
 4. run customer-service :
-5. run billing-service : (`info : billing service utiliser customer-service pour initialiser database`)
+5. run billing-service : (`info : billing service utilise customer-service pour initialiser database`)
 
 
 #### result :
@@ -74,6 +74,15 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
     <img src="images/img_8.png" alt="">
 
 
+### lien pour pull les images : 
+
+> image hassanelghalbzouri/ms-eureka-service : [link>>](https://hub.docker.com/r/hassanelghalbzouri/ms-eureka-service)
+
+> image hassanelghalbzouri/ms-gateway : [link>>](https://hub.docker.com/r/hassanelghalbzouri/ms-gateway)
+
+> image hassanelghalbzouri/ms-customer-service : [link>>](https://hub.docker.com/r/hassanelghalbzouri/ms-customer-service)
+
+> image hassanelghalbzouri/ms-billing-service : [link>>](https://hub.docker.com/r/hassanelghalbzouri/ms-billing-service)
 
 ###  déploiement et orchestration à l'aide de docker compose :
     
@@ -93,3 +102,5 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
     <img src="images/img_11.png" alt="">
     
     <img src="images/Capture12.png" alt="">
+
+
