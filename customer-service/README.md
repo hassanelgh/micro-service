@@ -75,7 +75,7 @@
 
   <img src="images/img_5.png" alt="">
 
-- [GatewayApplication](./src/main/resources/application.properties)
+- [application.properties](./src/main/resources/application.properties)
 
 
 ### CustomerServiceApplication :

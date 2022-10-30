@@ -21,8 +21,6 @@ public class InvoiceRestController {
 
 
     private InvoiceService invoiceService;
-
-
     public InvoiceRestController(InvoiceService invoiceService) {
         this.invoiceService = invoiceService;
     }

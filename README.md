@@ -17,6 +17,6 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
 
 
 - [x] [Eureka Server](./eureka-service)
-
 - [x] [Gateway](./gateway)
 - [x] [Customer-Service](./customer-service)
+- [x] [billing-Service](./billing-service)
