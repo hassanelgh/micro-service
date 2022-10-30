@@ -16,4 +16,6 @@ Après conteneuriser ces microservices à l'aide de Docker (en utilisant un Dock
 <img src="images/img.png" alt="">
 
 
-[x] [Eureka Server](https://github.com/hassanelgh/micro-service-spring-boot/blob/main/eureka-service)
+- [x] [Eureka Server](https://github.com/hassanelgh/micro-service-spring-boot/blob/main/eureka-service)
+
+- [x] [Gateway](https://github.com/hassanelgh/micro-service-spring-boot/tree/main/gateway)
